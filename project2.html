@@ -10,6 +10,223 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin: 0px;
+    padding:0px ;
+    /* font-family: 'Josefin Sans', sans-serif; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* logo and img of navigation bar */
+#logo{
+       margin: 2px 2px;
+       
+}
+#logo img{
+    margin: 2px 2px;
+    height: 30px;
+}
+/* Navigation bar: list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+           content:"" ;
+           background-color: black;
+           position: absolute;
+           top: 0px;
+           left: 0px;
+           height: 100%;
+           width:  100%; 
+           z-index: -1;
+           opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 2rem;
+
+}
+#navbar ul li a{
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+} 
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 43px;
+    justify-content: center;
+    align-items: center;
+    height:489px;
+
+}
+#home::before{
+    content:"" ;
+    background: url('../musician-1658887_1280.jpg') no-repeat center;
+    position: absolute; 
+    height: 81%;
+    width: 100%;
+    z-index: -1;
+    opacity: 89;
+    padding: 53px;;
+    margin:27px -119px -79px -207px;
+}
+#home h1{
+    color: white;
+    text-align: left;
+}
+#home p{
+    color:white;
+    text-align: left;
+    font-size: 1.4rem;
+   margin:-52px 161px 26px 808px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 255px 8px 52px 640px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+}
+.gold{
+    font-size: 3.8rem;
+    padding: 180px 0px 0px 530px;
+}
+
+.btn{
+    padding: 6px 138px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: -12px -535px 46px 89px;
+    font-size: 1.5rem;
+    border-radius: 10px; 
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btm{
+    padding: 6px 138px;
+    background-color: black;
+    color: white;
+    margin:405px -543px -247px 86px;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+/* Services center */
+#services{
+    margin: 43px;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#services .box{
+    
+    margin: 2px;
+    padding: initial;
+    border-radius: 2px;
+    background-color:grey;
+}
+#services .box img{
+    height: 294px;
+    margin: auto;
+    display: block;
+}
+
+    #client-section{
+        display: flex;
+        
+    }
+    #bst{
+    font-size: 3.8rem;
+    padding: 9px 4px 4px 54px;
+    margin: 4px 36px 18px 169px;
+    
+}
+#write{
+    background-color: whitesmoke;
+    color: rgb(42, 27, 27);
+    font-size: 2.0rem;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+#contact{
+    display: flex;
+    background-color: rgb(154, 129, 129);
+}
+footer{
+    background:black;
+    color: white;
+    padding: 26px 528px;
+} 
+.form input,
+.form textarea{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 6px 95px 42px 214px;
+    margin: 138px 43px -122px 222px;
+    font-size: 0.8rem;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#con{
+    font-weight: 700;
+    font-size: 4rem;
+    padding: 1px;
+    margin: 44px 43px -101px 370px;
+} 
+#sub{
+    justify-content: center;
+    align-items: center;
+    padding: 3px 129px 0px 156px;
+    margin: 155px 57px -68px 271px;
+    font: size 0.6rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: solid;
+    background-color: whitesmoke;
+    cursor: pointer;
+
+
+}
+#sub:hover{
+    background-color: black;
+    color: white;
+    
+}
+#row{
+    padding: 43px 0px 0px 0px;
+    margin:16px -290px 0px 128px;
+}
+</style>   
 </head>
 <body>
     <nav id="navbar">
